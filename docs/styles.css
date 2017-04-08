@@ -1,0 +1,38 @@
+:root {
+  --white: #FFF;
+  --indigo: #536DFE;
+  --orange: #FF6C00;
+  --grey: #BCBCBC;
+}
+
+.mdl-layout__header {
+  background-color: var(--white);
+  color: var(--indigo);
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+  color: var(--indigo);
+}
+
+.mdl-layout-title {
+  display: none;
+}
+
+.io-logo {
+  width: 285px;
+}
+
+.io-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+#register {
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  z-index: 900;
+}

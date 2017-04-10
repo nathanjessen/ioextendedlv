@@ -1,0 +1,29 @@
+language: ruby
+sudo: false
+rvm:
+- 2.2
+cache:
+  yarn: true
+  directories:
+  - vendor
+  - node_modules
+env:
+  global:
+  - TZ=America/Los_Angeles
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - JEKYLL_ENV=production
+  - secure: rEKKFl94lJBhyWp1V9a0xj746EoJ+/fMwNB6Q9a+/t9ARHVrX4ZT9aE74YThkI2oSmxslql1hXuzesp+ygceYnRSfqYq2L5silBSDOmXHgDJBr/QLoCp4R76ZlHWIPFTb5OS09YlEwet4sJjaUfNAqW41uxLpCFt9U8J+f47W7cvk1UaAiFjMJngVi9F63WVPiI3zyNcO1Kzx8bPtNXsUd8vf0O5k4kgu3ecIfPNNsiZLszT763BWO4hUfDHZ2ffC1qUPo6Krk87gHEq+b2y3H1r4l6f7tHK9i7LaESjgwk8nIsfsPtCmiN9pJPaKPZBC5eDzW0M5Rq/fjhUWMbsOYAb0VppJQgrJhqwOHk4wjEYIOQXFElFX+yUgyFAOL7hJ97niigmCZRLKDlfkYdY/oJc/l0ptIvueVBCJwtvlTFLDLD1cTXckqFt24JnXTUL30nTxvqoj3vOs6aLXqQ5/q7Re4UHM8LwWXIT1uhlwC0SDdFEbqa1i3cwGgQkskzOKopTeS/BJ+4jLVD0ZZZNJKjgI0Xobc1j1p3hPM8HCQRHdflTqaufbFH6mdztTESq7fWpn0Uzsqgrwj2HuUebXLFHTTKNmX+aQpoTmJX6VW/RKjH1PadpyCNDI3SAo7WveM7M8VU1Gjokr95gui0jRB+LPB+0J/qrG3B9Z+s73+Q=
+before_install:
+- curl -o- -L https://yarnpkg.com/install.sh | bash
+- export PATH=$HOME/.yarn/bin:$PATH
+install: bundle install --jobs=3 --retry=3 --path vendor --standalone --deployment
+script:
+- yarn run travis
+branches:
+  only:
+  - master
+node_js:
+- '6'
+notifications:
+  email:
+  - nathan.jessen@gmail.com

@@ -1,0 +1,19 @@
+# TEAM
+
+  Developer: Nathan Jessen
+  Contact: nathan.jessen [at] gmail.com
+  GitHub: nathanjessen
+  Twitter: @nathanjessen
+
+# TECHNOLOGY COLOPHON
+
+  Github Pages
+  Jekyll
+  Yarn
+  EditorConfig
+  Material Design Lite
+
+# SITE
+
+  Language: English
+  Doctype: HTML5

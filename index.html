@@ -1,65 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <title>Google I/O Extended Las Vegas 2017</title>
+---
+permalink: /index.html
+layout: default
+---
 
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+{% include navigation.html %}
 
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-  <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
-
-  <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-  <meta name="msapplication-TileColor" content="#3372DF">
-
-  <link rel="shortcut icon" href="images/favicon.png">
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium|Material+Icons&amp;lang=en">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-deep_orange.min.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-
-  <!-- Always shows a header, even in smaller screens. -->
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">
-          <h1>Google I/O Extended Las Vegas</h1>
-        </span>
-        <span class="io-logo">
-          <img src="images/Google_IO_Extended+LasVegas_2017_Logo_rgb.png" alt="Google I/O Extended Las Vegas">
-        </span>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation. We hide it in small screens. -->
-        <nav class="mdl-navigation mdl-layout--large-screen-only">
-          <a class="mdl-navigation__link" href="#when">When</a>
-          <a class="mdl-navigation__link" href="#where">Where</a>
-          <a class="mdl-navigation__link" href="#what">What</a>
-          <a class="mdl-navigation__link" href="#tickets">Tickets</a>
-          <a class="mdl-navigation__link" href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main class="mdl-layout__content">
-      <div class="page-content">
-        <h1>Information coming soon.</h1>
-      </div>
-    </main>
+<main class="mdl-layout__content">
+  <div class="container">
+    {% include hero.html %}
+    {% include overview.html %}
+    {% include where.html %}
+    {% include schedule.html %}
   </div>
-  <a href="https://www.eventbrite.com/" target="_blank" id="register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--primary mdl-color-text--primary-contrast">Register</a>
-  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-</body>
-</html>
+
+  {% include footer.html %}
+</main>

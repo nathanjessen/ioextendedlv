@@ -15,7 +15,7 @@
 }
 
 .c-schedule__grid__time {
-  font-family: "Product Sans",arial,sans-serif;
+  font-family: $preferred_font;
   font-size: 40px;
   line-height: 54px;
   background: #FAFAFA;
@@ -44,7 +44,7 @@
 }
 
 .c-schedule__grid__event__title {
-  font-family: "Product Sans",arial,sans-serif;
+  font-family: $preferred_font;
   font-size: 18px;
   line-height: 28px;
 }

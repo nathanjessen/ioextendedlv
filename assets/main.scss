@@ -1,0 +1,24 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+// Variables
+@import 'variables';
+
+// Vendor
+@import 'mdl-1.3/material-design-lite';
+
+// Components
+@import 'c-google-map';
+@import 'c-logo';
+@import 'c-schedule';
+
+// Layout
+@import 'l-container';
+
+// Utilities
+@import 'u-border';
+@import 'u-list';
+@import 'u-margin';
+@import 'u-padding';

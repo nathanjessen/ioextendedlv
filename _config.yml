@@ -80,6 +80,12 @@ verbose: false
 kramdown:
   syntax_highlighter: rouge
 
+####################
+# Sass Options
+####################
+sass:
+  sass_dir: _sass
+  style: compressed
 
 ####################
 # Other

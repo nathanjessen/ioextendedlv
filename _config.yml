@@ -10,24 +10,22 @@ collections:
   posts:
     output: false
 
-
 ####################
 # Handling Reading
 ####################
 # include:
 #   - "_pages"
 exclude:
-  - "node_modules"
-  - "vendor"
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "package.json"
-  - "LICENSE.md"
-  - "README.md"
-  - "yarn.lock"
-
+  - 'node_modules'
+  - 'vendor'
+  - '*.sublime-project'
+  - '*.sublime-workspace'
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - 'package.json'
+  - 'LICENSE.md'
+  - 'README.md'
+  - 'yarn.lock'
 
 ####################
 # Filtering Content
@@ -37,7 +35,6 @@ exclude:
 # future: false
 # unpublished: false
 
-
 ####################
 # Plugins
 ####################
@@ -46,13 +43,11 @@ gems:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-
 ####################
 # Conversion
 ####################
 # markdown: kramdown
 # excerpt_separator: "\n\n"
-
 
 ####################
 # Serving
@@ -63,15 +58,13 @@ gems:
 # baseurl: ""
 # show_dir_listing: false
 
-
 ####################
 # Outputting
 ####################
 # permalink: ":categories/:title/"
 # paginate_path: /page:num
-timezone: "America/Los_Angeles"
+timezone: 'America/Los_Angeles'
 verbose: false
-
 
 ####################
 # Markdown Processor
@@ -94,23 +87,22 @@ sass:
 profile: false
 
 # Custom vars
-locale: "en-US"
-title: "Google I/O Extended Las Vegas 2017"
+locale: 'en-US'
+title: 'Google I/O Extended Las Vegas 2017'
 # categories_path: categories.html
 # tags_path: tags.html
 rss_path: atom.xml
-
 
 ####################
 # Personal Information
 ####################
 
-author: "Nathan Jessen"
+author: 'Nathan Jessen'
 # logo:
 
 # Contact
-email: "nathan.jessen@gmail.com"
-location: "Las Vegas, NV"
+email: 'nathan.jessen@gmail.com'
+location: 'Las Vegas, NV'
 
 # Google Analytics
 ga_domain: ioextendedlv.github.io
@@ -118,7 +110,7 @@ ga_tracking_id: UA-97121897-1
 
 # Social
 # githubs:
-  # username: "nathanjessen"
+# username: "nathanjessen"
 # twitter:
 #   username: "nathanjessen"
 # gplus:

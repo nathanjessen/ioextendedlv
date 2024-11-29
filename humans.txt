@@ -9,9 +9,8 @@
 
   Github Pages
   Jekyll
-  Yarn
   EditorConfig
-  Material Design Lite
+  Material Design
 
 # SITE
 

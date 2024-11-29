@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          bundle install --jobs=3 --retry=3 --path vendor --standalone --deployment
+
+      - name: Build site
+        run: npm run build
+        env:
+          TZ: America/Los_Angeles
+          NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+          JEKYLL_ENV: production
+
+      - name: Test build
+        run: npm test
+        env:
+          JEKYLL_ENV: production

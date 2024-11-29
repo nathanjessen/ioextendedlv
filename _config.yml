@@ -39,7 +39,7 @@ exclude:
 # Plugins
 ####################
 # whitelist: []
-gems:
+plugins:
   - jekyll-sitemap
 
 ####################

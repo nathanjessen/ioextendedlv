@@ -40,7 +40,6 @@ exclude:
 ####################
 # whitelist: []
 gems:
-  - jekyll-seo-tag
   - jekyll-sitemap
 
 ####################
@@ -116,7 +115,6 @@ ga_tracking_id: UA-97121897-1
 # gplus:
 #   username: "NathanJessen"
 
-# jekyll-seo-tag - social profiles
 social:
   links:
     - https://github.com/ioextendedlv"

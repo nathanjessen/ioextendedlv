@@ -29,8 +29,5 @@
   "homepage": "https://github.com/IOExtendedLV/ioextendedlv.github.io#readme",
   "devDependencies": {
     "rimraf": "^4.4.1"
-  },
-  "dependencies": {
-    "@material/web": "^1.1.1"
   }
 }

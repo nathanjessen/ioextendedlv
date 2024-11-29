@@ -1,6 +1,6 @@
 # I/O Extended Las Vegas
 
-Website for Google I/O Extended Las Vegas, built with Jekyll and Material Design Web Components.
+Website for Google I/O Extended Las Vegas, built with Jekyll and Material Design Lite.
 
 [![CI](https://github.com/IOExtendedLV/ioextendedlv.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/IOExtendedLV/ioextendedlv.github.io/actions/workflows/ci.yml)
 
@@ -43,7 +43,6 @@ Website for Google I/O Extended Las Vegas, built with Jekyll and Material Design
 
 This site is built with:
 - [Jekyll](https://jekyllrb.com/) - Static site generator
-- [Material Design Web Components](https://github.com/material-components/material-web) - Modern Material Design components
 - [GitHub Pages](https://pages.github.com/) - Hosting platform
 - [GitHub Actions](https://github.com/features/actions) - CI/CD pipeline
 

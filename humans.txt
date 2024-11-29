@@ -10,7 +10,7 @@
   Github Pages
   Jekyll
   EditorConfig
-  Material Design
+  Material Design Lite
 
 # SITE
 

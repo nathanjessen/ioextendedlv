@@ -1,105 +1,89 @@
 ####################
-# Where things are
+# Site settings
 ####################
-# destination: ./_site
-# plugins_dir: _plugins
-# layouts_dir: _layouts
-# data_dir: _data
-# includes_dir: _includes
+title: Google I/O Extended Las Vegas
+description: The first Google I/O Extended event for the Las Vegas area
+baseurl: ""
+url: "https://nathanjessen.github.io/ioextendedlv"
+repository: nathanjessen/ioextendedlv
+
+####################
+# Build settings
+####################
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+
+# Sass/SCSS
+sass:
+  style: compressed
+  sourcemap: never
+  load_paths:
+    - _sass
+    - node_modules
+
+# Exclude from processing
+exclude:
+  - .git/
+  - .github/
+  - node_modules/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - README.md
+  - LICENSE.md
+  - "*.log"
+  - "*.config.js"
+
+# Include specific files/folders
+include:
+  - _pages
+  - .well-known
+  - humans.txt
+  - robots.txt
+
+# Collections
 collections:
   posts:
     output: false
 
-####################
-# Handling Reading
-####################
-# include:
-#   - "_pages"
-exclude:
-  - 'node_modules'
-  - 'vendor'
-  - '*.sublime-project'
-  - '*.sublime-workspace'
-  - 'Gemfile'
-  - 'Gemfile.lock'
-  - 'package.json'
-  - 'LICENSE.md'
-  - 'README.md'
-  - 'package-lock.json'
-
-####################
-# Filtering Content
-####################
-# show_drafts: null
-# limit_posts: 10
-# future: false
-# unpublished: false
-
-####################
 # Plugins
-####################
-# whitelist: []
 plugins:
   - jekyll-sitemap
 
-####################
-# Conversion
-####################
-# markdown: kramdown
-# excerpt_separator: "\n\n"
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
 
-####################
 # Serving
-####################
-# detach: false
-# port: 4000
-# host: 127.0.0.1
-# baseurl: ""
-# show_dir_listing: false
+port: 4000
+host: 127.0.0.1
+livereload: true
 
-####################
 # Outputting
-####################
-# permalink: ":categories/:title/"
-# paginate_path: /page:num
-timezone: 'America/Los_Angeles'
-verbose: false
+permalink: pretty
+timezone: America/Los_Angeles
 
-####################
-# Markdown Processor
-####################
-kramdown:
-  syntax_highlighter: rouge
-
-####################
-# Sass Options
-####################
-sass:
-  sass_dir: _sass
-  style: compressed
-
-####################
-# Other
-####################
-
-# Liquid profiler - Generate a Liquid rendering profile to help you identify performance bottlenecks.
-profile: false
-
-# Custom vars
-locale: 'en-US'
-title: 'Google I/O Extended Las Vegas 2017'
-# categories_path: categories.html
-# tags_path: tags.html
-rss_path: atom.xml
+# Misc
+encoding: utf-8
+strict_front_matter: true
+liquid:
+  strict_filters: true
+  strict_variables: true
 
 ####################
 # Personal Information
 ####################
-
 author: 'Nathan Jessen'
-# logo:
-
-# Contact
 email: 'nathan.jessen@gmail.com'
 location: 'Las Vegas, NV'
 
@@ -108,18 +92,6 @@ ga_domain: ioextendedlv.github.io
 ga_tracking_id: UA-97121897-1
 
 # Social
-# githubs:
-# username: "nathanjessen"
-# twitter:
-#   username: "nathanjessen"
-# gplus:
-#   username: "NathanJessen"
-
 social:
   links:
-    - https://github.com/ioextendedlv"
-    # - http://codepen.io/njessen"
-    # - https://twitter.com/nathanjessen"
-    # - https://medium.com/@nathanjessen"
-    # - https://www.linkedin.com/in/njessen"
-    # - https://plus.google.com/+NathanJessen/posts"
+    - https://github.com/ioextendedlv

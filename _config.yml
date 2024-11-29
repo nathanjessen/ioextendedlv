@@ -3,9 +3,10 @@
 ####################
 title: Google I/O Extended Las Vegas
 description: The first Google I/O Extended event for the Las Vegas area
-baseurl: ""
-url: "https://nathanjessen.github.io/ioextendedlv"
+baseurl: "/ioextendedlv"
+url: "https://nathanjessen.github.io"
 repository: nathanjessen/ioextendedlv
+locale: "en-US"
 
 ####################
 # Build settings
@@ -87,11 +88,7 @@ author: 'Nathan Jessen'
 email: 'nathan.jessen@gmail.com'
 location: 'Las Vegas, NV'
 
-# Google Analytics
-ga_domain: ioextendedlv.github.io
-ga_tracking_id: UA-97121897-1
-
 # Social
 social:
   links:
-    - https://github.com/ioextendedlv
+    - https://github.com/nathanjessen/ioextendedlv

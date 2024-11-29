@@ -1,7 +1,8 @@
 {
-  "name": "ioextendedlv.github.io",
+  "name": "ioextendedlv",
   "version": "1.0.0",
   "description": "Website for Google I/O Extended Las Vegas",
+  "private": true,
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -9,7 +10,6 @@
   "scripts": {
     "start": "bundle exec jekyll serve --livereload",
     "build": "bundle exec jekyll build",
-    "test": "bundle exec jekyll build --safe",
     "clean": "bundle exec jekyll clean && rimraf node_modules",
     "refresh": "npm run clean && npm install"
   },
@@ -19,14 +19,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IOExtendedLV/ioextendedlv.github.io.git"
+    "url": "git+https://github.com/nathanjessen/ioextendedlv.git"
   },
-  "author": "Nathan Jessen <https://nathanjessen.github.io/>",
-  "license": "ISC",
+  "author": "Nathan Jessen",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/IOExtendedLV/ioextendedlv.github.io/issues"
+    "url": "https://github.com/nathanjessen/ioextendedlv/issues"
   },
-  "homepage": "https://github.com/IOExtendedLV/ioextendedlv.github.io#readme",
+  "homepage": "https://nathanjessen.github.io/ioextendedlv",
   "devDependencies": {
     "rimraf": "^4.4.1"
   }

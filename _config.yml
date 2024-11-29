@@ -54,10 +54,6 @@ collections:
   posts:
     output: false
 
-# Plugins
-plugins:
-  - jekyll-sitemap
-
 # Defaults
 defaults:
   - scope:

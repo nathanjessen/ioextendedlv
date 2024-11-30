@@ -33,3 +33,7 @@ vendor
 .bundle
 .jekyll-metadata
 .sass-cache
+
+# Docker
+.docker-sync
+docker-compose.override.yml

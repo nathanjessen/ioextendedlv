@@ -8,14 +8,19 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "bundle exec jekyll serve --livereload",
-    "build": "bundle exec jekyll build",
+    "start": "docker compose up",
+    "start:local": "bundle exec jekyll serve --livereload",
+    "build": "docker compose run --rm site bundle exec jekyll build",
+    "build:local": "bundle exec jekyll build",
     "clean": "bundle exec jekyll clean && rimraf node_modules",
-    "refresh": "npm run clean && npm install"
+    "refresh": "npm run clean && npm install",
+    "docker:build": "docker compose build",
+    "docker:stop": "docker compose down",
+    "docker:clean": "docker compose down -v"
   },
   "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=8.0.0"
+    "node": "20.9.0",
+    "npm": "10.1.0"
   },
   "repository": {
     "type": "git",

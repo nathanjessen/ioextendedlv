@@ -19,6 +19,10 @@ kramdown:
   syntax_highlighter_opts:
     css_class: highlight
 
+# Explicitly set which plugins to use
+plugins:
+  - jekyll-seo-tag
+
 # Sass/SCSS
 sass:
   style: compressed
@@ -41,6 +45,10 @@ exclude:
   - LICENSE.md
   - "*.log"
   - "*.config.js"
+  - Dockerfile
+  - docker-compose.yml
+  - .docker-sync/
+  - docker-compose.override.yml
 
 # Include specific files/folders
 include:

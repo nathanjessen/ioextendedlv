@@ -16,7 +16,7 @@ Start the development server:
 npm start
 ```
 
-The site will be available at http://localhost:4000 with live reload enabled.
+The site will be available at http://localhost:4000/ioextendedlv/ with live reload enabled.
 
 Additional Docker commands:
 ```bash
@@ -30,18 +30,31 @@ npm run docker:clean  # Stop containers and remove volumes
 Prerequisites:
 - [Ruby](https://www.ruby-lang.org/en/) >= 3.2.0
 - [Bundler](https://bundler.io/) >= 2.0.0
-- [Node.js](https://nodejs.org/) >= 18.0.0
-- [NPM](https://www.npmjs.org/) >= 8.0.0
+- [Node.js](https://nodejs.org/) >= 20.9.0
+- [NPM](https://www.npmjs.org/) >= 10.1.0
 
 Installation:
 ```bash
+# Install Ruby dependencies
 bundle install
+
+# Install Node.js dependencies
+npm install
 ```
 
 Start the development server:
 ```bash
 npm run start:local
 ```
+
+## Node.js Configuration
+
+This project includes configuration files for consistent Node.js development:
+
+- `.nvmrc` - Specifies Node.js version (20.9.0)
+- `.npmrc` - Configures npm behavior (strict engine checks, exact versions, etc.)
+
+If you use nvm, you can run `nvm use` to automatically switch to the correct Node.js version.
 
 ## Building the Site
 
@@ -71,7 +84,7 @@ npm run build:local
 
 This site is configured to be automatically built and deployed by GitHub Pages. When you push to the main branch, GitHub will automatically build and deploy your site using Jekyll.
 
-Note: While we use Ruby 3.2 for local development, GitHub Pages uses Ruby 2.7. This shouldn't cause any issues since we use Bundler to manage dependencies.
+Note: While both Docker and local development use Ruby 3.2, GitHub Pages uses Ruby 3.0. This shouldn't cause any issues since we use Bundler to manage dependencies.
 
 ## License
 
